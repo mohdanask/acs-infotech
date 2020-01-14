@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.acs.genric.MyTestListener"></listener>
+</listeners>
+  <test  name="Test">
+   <parameter name="browser" value="firefox"/>
+  <parameter name="baseurl" value="http://103.205.66.103/OUPRMS"/>
+    <classes>
+      <class name="com.acs.scripts.ExecutiveMasterTest"/>
+    </classes>
+  </test> 
+</suite> 
